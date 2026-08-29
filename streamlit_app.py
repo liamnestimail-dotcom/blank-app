@@ -21,7 +21,7 @@ if selected_plant:
 images_list=["plant_images/standard.jpeg","plant_images/spike.jpeg","plant_images/bomb.jpeg","plant_images/thunder.jpeg"]
 st.image(images_list[0])
 
-choices_df=pd.DataFrame({"plants":plants_list,"plant_images":images_list3})
+choices_df=pd.DataFrame({"plants":plants_list,"plant_images":images_list})
 st.dataframe(choices_df)
 
 
