@@ -12,7 +12,7 @@ plants_list=["standert","spike","bomb","thunder","block"]
 #st.write(plants_list[2])
 #st.write(plants_list[3])
 #st.write(plants_list[4])
-selected_plant=st.selectbox("skin",plants_list)
+#selected_plant=st.selectbox("skin",plants_list)
 #st.write("your plant is",selected_plant)
 selected_plant=None
 selected_plant=st.selectbox("your plant is",plants_list)
