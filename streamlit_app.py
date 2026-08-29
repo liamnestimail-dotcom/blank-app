@@ -19,9 +19,10 @@ if selected_plant:
     st.write("your plant is",selected_plant)
 
 images_list=["plant_images/standard.jpeg","plant_images/spike.jpeg","plant_images/bomb.jpeg","plant_images/thunder.jpeg"]
-st.image(images_list[0])
+#st.image(images_list[0])
 
 choices_df=pd.DataFrame({"plants":plants_list,"plant_images":images_list})
 st.dataframe(choices_df)
-
-
+new_choice=st.selectbox("your plant is", choices_df["plants"])
+image=choices_df[choices_df["plants"]==new_choice]["plant_images"].iloc[0]
+st.image(image,width=200)
